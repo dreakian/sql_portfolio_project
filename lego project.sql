@@ -17,13 +17,13 @@ CREATE TABLE til_portfolio_projects.schema_lyon_abido.colors
     name VARCHAR(255), 
     rgb VARCHAR(255),
     is_trans VARCHAR(255)
-); // Creates an empty table
+); // -- Creates an empty table
 
 INSERT INTO schema_lyon_abido.colors 
 (
     SELECT *
     FROM staging.LEGO_COLORS
-); // Populates an empty table using data from an existing table
+); // -- Populates an empty table using data from an existing table
 
 ----------------------------------------------------------------------
 
@@ -138,7 +138,7 @@ INSERT INTO schema_lyon_abido.themes
 --DESCRIBE SCHEMA lyon_abido;
 --SHOW TABLES IN lyon_abido;
 
-ALTER TABLE schema_lyon_abido.colors ADD PRIMARY KEY (id); // Sets the id field in the colors table to be a primary key
+ALTER TABLE schema_lyon_abido.colors ADD PRIMARY KEY (id); // -- Sets the id field in the colors table to be a primary key
 
 ALTER TABLE schema_lyon_abido.inventories ADD PRIMARY KEY (id); 
 
